@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import { HomeComponent } from './home/home.component';
-import { RouterModule } from '@angular/router';
+import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [
     HomeComponent,
-    RouterModule,
+    RouterLink,
+    RouterOutlet,
   ],
   template: `
     <main>
@@ -23,7 +24,6 @@ import { RouterModule } from '@angular/router';
   `,
   styleUrls: ['./app.component.css'],
 })
-
 export class AppComponent {
   title = 'homes';
 }
